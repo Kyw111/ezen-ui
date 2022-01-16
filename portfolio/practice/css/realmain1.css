@@ -1,0 +1,204 @@
+.navibox{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    text-align: right;
+    z-index: 10;
+}
+.navi {
+    border: 0.5px solid whitesmoke;
+    color: rgb(63, 52, 138);
+    padding: 3px;
+    display: inline-block;
+    margin: 15px;
+    transition: all 0.5s;
+
+}
+.navi:hover{
+    transform: translateX(-5px);
+    /* transform: scale(1.05); */
+    color: black;
+    font-weight: bold;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
+
+header { /* #home 으로 옮겨줘야함 */
+    text-align: center;
+    background-color: #0C6291;
+    height: 650px;
+    transition: all 1s;
+    margin-top: 50px;
+    color: rgb(67, 148, 214);
+}
+header:hover, article:hover{
+    background-color: rgb(29, 78, 143);
+}
+.col-12 {
+    top: 300px
+}
+.col-12 h1 {
+    transition: transform 0.8s;
+}
+.col-12 h1:hover {
+    transform: scale(1.1);
+}
+h1 {
+    color: whitesmoke;
+}
+section, footer {
+    text-align: center;
+    background-color: #07374a;
+    height: 550px;
+    transition: all 1s;
+    color: rgb(21, 160, 141);
+    
+}
+section:hover, footer:hover{
+    background-color: #0e4b63;
+}
+section .col-4 {
+    left: 50px;
+}
+.col-4 li {
+    margin-bottom: 15px;
+    color: rgb(124, 124, 124);
+    transition: all 0.5s;
+}
+.col-4 li:hover{
+    color: black;
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+section .col-4, .col-8 {
+    top: 50px;
+}
+.col-8 img{ /* 어바웃 사진 */
+    width: 300px;
+    height: 300px;
+    float: right;
+    /* border-radius: 50%; */
+    margin-right: 30px;
+    animation-name: about-photo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /* 동작횟수 무한*/
+    animation-direction: alternate;
+
+}
+    @keyframes about-photo {
+        from {
+            border-radius: 15px;
+        }
+        to {
+            border-radius: 50%;
+        }
+}
+
+article {
+    text-align: center;
+    background-color: #0C6291;
+    height: 1300px;
+    transition: all 1s;
+    color: rgb(67, 148, 214);
+    /* bottom: 30px; */
+}
+article img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /* transition: all 1s; */
+}
+article .col-5 {
+    transition: all 5s;
+}
+.toleft:hover {
+    transform: translateX(-300px); 
+}
+.toright:hover {
+    transform: translateX(300px);
+}
+footer li {
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+footer button {
+    /* border: 0.5px solid #07374a; */
+    /* border-radius: 50%; */
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    border: 0;
+    outline: 1;
+    padding: 0;
+    /* background-color: #07374a; */
+    background: none;
+    transition: all 0.8s;
+
+}
+footer button:hover {
+    /* transform: scale(1.2); */
+    background-color: #0e4b63;
+    /* color: black; */
+    
+}
+#contact a {
+    color: black;
+}
+#contact a:hover {
+    text-decoration: none;
+    color: lightgray;
+}
+#home{
+
+}
+#about{
+
+}
+#experience{
+
+}
+#contact{
+
+}
+.main-title{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#home p, #about p, #experience p, #contact p{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+}
+#experience h5 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.display-4 {
+    font-family: 'Work Sans', sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+.display-4:hover{
+    transform: translateX(-2px);
+    /* transform: translateX(2px); */
+}
+
+#experience ul {
+    bottom: 50px;
+}
+#experience li {
+    list-style: none;
+    margin-bottom: 50px;
+}
+#experience .col-4, .col-8 {
+    top: 50px;
+    /* bottom: 50px; */
+}
+#experience .display-4 {
+    /* top: 150px; */
+    margin-bottom: 100px;
+}
+#ex-content-1, #ex-content-2 {
+    display: none;
+} 

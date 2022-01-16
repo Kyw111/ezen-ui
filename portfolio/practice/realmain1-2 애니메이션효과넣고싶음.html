@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="realmain1.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+   />
+     <title>KIMYOUNGWOO's Portfolio</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Nanum+Gothic:wght@700&family=Roboto+Mono:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
+<script src="js/jquery.js"></script>
+<script>
+
+    $(function(){
+        $(".ex-img").on("click", function() {
+            $("#ex-content-1, #ex-content-2").fadeToggle(500, "swing");
+        });
+    });
+
+</script>
+</head>
+
+<body>
+    <div>
+        <nav class="navibox">
+            <ul class="list-unstyled">
+                <a href="#home"><li class="navi" >Home</li></a>
+                <a href="#about"><li class="navi" >About</li></a>
+                <a href="#experience"><li class="navi" >Experience</li></a>
+                <a href="#contact"><li class="navi" >Contact</li></a>
+            </ul>
+        </nav>
+    </div> <!-- 네브 끝-->
+
+    <header id="home">
+        <div class="row">
+            <div class="col-12 main-title">
+                <h1 class="display-2">KIM YOUNG WOO</h1>
+                <p>I am training for Wep Developer</p>
+            </div>
+        </div>
+    </header> <!-- 헤더 끝-->
+
+    <section id="about">
+    <div class="row">
+            <div class="col-4">
+                <h1 class="display-4">I can use these</h1>
+                <ul class="list-unstyled">
+                    <li>Java</li>
+                    <li>OracleDB</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>JQuery</li>
+                </ul>
+            </div>
+
+            <div class="col-8">
+                <h1 class="display-4">About Me</h1>
+                <div> <!-- 여기 어떻게 하지....? -->
+                        <div style="float: right; margin-right: 100px; margin-left: 100px;">
+                            <img src="images/myphoto.jpg">
+                        </div>
+                        <div style="float: right;">
+                            <p class="text-center mt-5">
+                                자기소개를 적는 공간입니다. 무엇을 적어야 할지 모르겠네요<br>
+                                아직 프로젝트를 하지않아서 소개할 만한 것이 없습니다 <br>
+                                동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세<br>
+                                무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+                            </p>
+                        </div>
+                        <div style="clear: both;"></div>
+                </div>
+            </div>
+
+    </div>
+    </section> <!-- 어바웃 끝-->
+    
+    <article id="experience">  <!-- 경력부분 너무 허접함, 좀 더 꾸며보자-->
+            <div>
+                <h1 class="display-4">Experience</h1>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <div>
+                        <img class="ex-img" src="images/guide.jpg">
+                    </div>
+                </div>
+                <div class="col-3" id="ex-content-1">
+                    <h4>통역 지원 활동</h4>
+                    <p>대만 양매JC 한국방문 통역 지원 2016.12</p>
+                </div>
+                
+                <div class="col-3" id="ex-content-2">
+                    <h4>(주)인천공항 운영서비스 근무</h4>
+                    <p>2017.05 ~ 2020.01</p>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <img class="ex-img" src="images/airport.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <div>
+                        <img class="ex-img" src="images/guide.jpg">
+                    </div>
+                </div>
+                <div class="col-3" id="ex-content-1">
+                    <h4>통역 지원 활동</h4>
+                    <p>대만 양매JC 한국방문 통역 지원 2016.12</p>
+                </div>
+                
+                <div class="col-3" id="ex-content-2">
+                    <h4>(주)인천공항 운영서비스 근무</h4>
+                    <p>2017.05 ~ 2020.01</p>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <img class="ex-img" src="images/airport.jpg">
+                    </div>
+                </div>
+            </div>
+            
+
+
+    </article> <!-- 경력 끝 -->
+
+    <footer id="contact">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="display-4">Contact me</h1>
+                <p>If you want to contact me, You can send message to me</p>
+                <p>E-mail : partan31@gmail.com</p>
+                <ul class="list-unstyled text-center">
+                    <li><button><a href="https://github.com/Kyw111" target="_blank"><i class="fab fa-github"></i> github</a></button></li>
+                    <li><button><a href="https://www.instagram.com/k_0woo/" target="_blank"><i class="fab fa-instagram"></i> instagram</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </footer> <!-- 푸터 끝-->
+</body>
+</html>
+

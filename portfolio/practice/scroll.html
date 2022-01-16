@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <style>
+      div {
+        margin: auto;
+        width: 500px;
+        height: 2000px;
+        background-color: lightblue;
+        border: 1px solid #bcbcbc;
+      }
+      a.top {
+        position: fixed;
+        left: 50%;
+        bottom: 50px;
+        display: none;
+      }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script>
+      $( document ).ready( function() {
+        $( window ).scroll( function() {
+          if ( $( this ).scrollTop() > 300 ) {
+            $( '.top' ).fadeIn();
+          } else {
+            $( '.top' ).fadeOut();
+          }
+        } );
+        $( '.top' ).click( function() {
+          $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+          return false;
+        } );
+      } );
+    </script>
+  </head>
+  <body>
+    <div></div>
+		<a href="#" class="top">Top</a>
+  </body>
+</html>
