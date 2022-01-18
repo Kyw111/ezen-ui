@@ -5,7 +5,7 @@ body {
 }
 #navi {
     width: 100%;
-    background-color: #856b43;
+    background-color: #263343;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +14,7 @@ body {
 }
 .nav-name {
     margin-left: 200px;
+    color: darkgray;
 }
 .nav-list {
     margin-right: 200px;
@@ -23,12 +24,8 @@ body {
     list-style: none;
     display: flex;
 }
-.nav-list li {
-    padding: 8px 12px;
-}
-.nav-list li:hover {
-    background-color: #dd9120;
-    border-radius: 8px;
+.nav-list a:hover{
+    color: black;
 }
 .nav-list a {
     text-decoration: none;
@@ -89,7 +86,7 @@ body {
     cursor: pointer;
 }
 footer {
-    background-color: #856b43;
+    background-color: #263343;
 }
 .foot {
     clear: both;
@@ -108,6 +105,9 @@ footer {
     z-index: 10;
     font-weight: bold;
     color: rgb(207, 207, 207);
+}
+#top-btn:hover {
+    color: black;
 }
 
 .life-intro {

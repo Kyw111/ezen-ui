@@ -5,7 +5,7 @@ body {
 }
 #navi {
     width: 100%;
-    background-color: #856b43;
+    background-color: #263343;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,6 +14,7 @@ body {
 }
 .nav-name {
     margin-left: 200px;
+    color: darkgray;
 }
 .nav-list {
     margin-right: 200px;
@@ -23,17 +24,13 @@ body {
     list-style: none;
     display: flex;
 }
-.nav-list li {
-    padding: 8px 12px;
-}
-.nav-list li:hover {
-    background-color: #dd9120;
-    border-radius: 8px;
-}
 .nav-list a {
     text-decoration: none;
     color: darkgrey;
     margin: 20px;
+}
+.nav-list a:hover{
+    color: black;
 }
 #main-box-1, #main-box-2, #main-box-3 {
     display: flex;
@@ -86,10 +83,10 @@ body {
 #body-box img:hover{
     transform: scale(1.1);
     border-radius: 10px;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 footer {
-    background-color: #856b43;
+    background-color: #263343;
 }
 .foot {
     clear: both;
@@ -109,29 +106,9 @@ footer {
     font-weight: bold;
     color: white;
 }
+#top-btn:hover {
+    color: black;
+}
 .trip-intro {
     margin: 50px 0px;
 }
-
-.img-content-hover {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    white-space: nowrap;
-    display: none;
-    padding: 1rem;
-    background: white;
-    font-weight: 400;
-    margin-top: 1.25rem;
-    margin-left: -2rem;
-  }
-  .title {
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 700;
-  }
-  .category {
-    font-size: 1rem;
-    color: gray;
-  }
