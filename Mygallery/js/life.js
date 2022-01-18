@@ -32,9 +32,8 @@ function newpop(num) {
     window.open(src, "popUp", windowStatus) // 사진팝업
 }
 
-$(document).ready(function(){ 
-    $('.bxslider').bxSlider();
- });
+
+
 
  
 

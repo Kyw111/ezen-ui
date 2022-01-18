@@ -109,3 +109,29 @@ footer {
     font-weight: bold;
     color: white;
 }
+.trip-intro {
+    margin: 50px 0px;
+}
+
+.img-content-hover {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    display: none;
+    padding: 1rem;
+    background: white;
+    font-weight: 400;
+    margin-top: 1.25rem;
+    margin-left: -2rem;
+  }
+  .title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .category {
+    font-size: 1rem;
+    color: gray;
+  }

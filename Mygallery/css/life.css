@@ -109,3 +109,7 @@ footer {
     font-weight: bold;
     color: rgb(207, 207, 207);
 }
+
+.life-intro {
+    margin: 50px 0px;
+}
