@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: lightgrey;
+}
+#navi {
+    width: 100%;
+    background-color: #263343;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    /* margin: 30px; */
+}
+.nav-name {
+    margin-left: 200px;
+    color: darkgray;
+}
+.nav-list {
+    margin-right: 200px;
+}
+.nav-list ul{
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+}
+.nav-list a {
+    text-decoration: none;
+    color: darkgrey;
+    margin: 20px;
+}
+.nav-list a:hover{
+    color: black;
+}
+#main-box-1, #main-box-2, #main-box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+#main-box-1 .photos {
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+#main-box-2 .photos {
+    width: 475px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+#main-box-3 .photos {
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+#main-box-1 img {
+    width: 400px;
+    height: 250px;
+    /* margin: 5px; */
+    overflow: hidden;
+}
+#main-box-2 img {
+    width: 475px;
+    height: 300px;
+    /* margin: 2px; */
+    overflow: hidden;
+}
+#main-box-3 img {
+    width: 800px;
+    height: 500px;
+    /* margin: 5px; */
+    overflow: hidden;
+}
+#body-box {
+    /* background-color: #54442B; */
+}
+#body-box img {
+    transition: all 0.5s ease-out;
+}
+#body-box img:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+footer {
+    background-color: #263343;
+}
+.foot {
+    clear: both;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#top-btn {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    text-decoration: none;
+    z-index: 10;
+    font-weight: bold;
+    color: white;
+}
+#top-btn:hover {
+    color: black;
+}
+.trip-intro {
+    margin: 50px 0px;
+}
